@@ -1,4 +1,5 @@
 # test
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 ## Description  
 test
   
@@ -25,7 +26,7 @@ test
 ## License
 
 This project is licensed under the MIT License.
-undefinedfunction renderLicenseLink(license) { }
+![License: MIT](https://img.shields.io/badge/License-undefined-blue.svg)function renderLicenseLink(license) { }
 
 ## Questions
 
