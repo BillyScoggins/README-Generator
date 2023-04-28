@@ -1,15 +1,44 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
+
+  let badge; 
+  switch (license) {
+    case "MIT":
+      badge = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+      break;
+      case "Apache":
+        badge = "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
+        break;
+        case "Boost":
+          badge = "[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)";
+          break;
+  }
+
+  return badge 
+}
   
-    return `![License: MIT](https://img.shields.io/badge/License-${license}-blue.svg)`
-    //"[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
-  
-} 
+    
+    
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) { }
+function renderLicenseLink(license) { 
+  let link; 
+  switch (license) {
+    case "MIT":
+      link = "(https://opensource.org/licenses/MIT)";
+      break;
+      case "Apache":
+        link = "(https://opensource.org/licenses/Apache-2.0)";
+        break;
+        case "Boost":
+          link = "(https://www.boost.org/LICENSE_1_0.txt)";
+          break;
+  }
+
+  return link 
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
@@ -19,7 +48,7 @@ function renderLicenseSection(license) {
     licenseSection = "";
   }
   else {
-    //licenseSection = `${renderLicenseBadge(license)}${renderLicenseLink}`
+    licenseSection = `This project is licensed under the ${renderLicenseLink(license)}`
   }
   return licenseSection;
 }
@@ -54,13 +83,13 @@ ${data.contribute}
 
 ## License
 
-This project is licensed under the ${data.license} License.
-${renderLicenseSection()}
+
+${renderLicenseSection(data.license)}
 
 ## Questions
 
-Github profile: [github.com/${data.github}](https://github.com/${data.github})<br>
-For further questions I can be reached at ${data.email}
+Github profile: [${data.github}](https://github.com/${data.github})<br>
+For further questions I can be reached at [${data.email}](mailto:${data.email})
 `;
 }
 

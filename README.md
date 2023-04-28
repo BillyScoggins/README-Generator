@@ -1,5 +1,5 @@
 # test
-![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Description  
 test
   
@@ -25,10 +25,10 @@ test
 
 ## License
 
-This project is licensed under the MIT License.
-![License: MIT](https://img.shields.io/badge/License-undefined-blue.svg)function renderLicenseLink(license) { }
+
+This project is licensed under the (https://opensource.org/licenses/MIT)
 
 ## Questions
 
-Github profile: [github.com/undefined](https://github.com/undefined)<br>
-For further questions I can be reached at test
+Github profile: [test](https://github.com/test)<br>
+For further questions I can be reached at [test](mailto:test)

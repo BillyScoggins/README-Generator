@@ -61,7 +61,7 @@ function init() {
         type: "list",
         message: "Choose a license for your project.",
         name: "license",
-        choices: ["MIT"]
+        choices: ["MIT", "Apache", "Boost"]
       },
       {
         type: "input",
@@ -76,7 +76,7 @@ function init() {
       {
         type: "input",
         message: "Provide your github username.",
-        name: "username",
+        name: "github",
       },
       {
         type: "input",
